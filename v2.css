@@ -310,3 +310,22 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
    /*  background-size: cover; */
     background-attachment: fixed;
 }
+
+/* Default styles (desktop first approach): Hide mobile content by default */
+.mobile-only {
+    display: none;
+}
+
+.desktop-only {
+    display: block; /* or inline, inline-block, flex, etc. */
+}
+
+/* Media query for screens smaller than or equal to 768px (common mobile breakpoint) */
+@media screen and (max-width: 768px) {
+    .desktop-only {
+        display: none;
+    }
+    .mobile-only {
+        display: block; /* Show mobile content on small screens */
+    }
+}
