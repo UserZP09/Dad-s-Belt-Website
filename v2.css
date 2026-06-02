@@ -338,6 +338,7 @@ span.blockspam {
     color: #fff;
     background-image: url(TrippyBG.JPG);
     width: 100%;
+    background-repeat:round;
    /*  background-size: cover; */
     
 }
